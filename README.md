@@ -22,31 +22,38 @@ REST API для социальной сети Yatube, разработанное
 ```bash
 git clone https://github.com/stanislav-backend/api_yatube.git
 cd api_yatube
-Создайте виртуальное окружение:
 
-bash
+2. **Создайте виртуальное окружение:**
+
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 # или
 venv\Scripts\activate  # Windows
-Установите зависимости:
 
-bash
+3.**Установите зависимости:**
+
+```bash
 pip install -r requirements.txt
-Примените миграции:
 
-bash
+4.**Примените миграции:**
+
+```bash
 cd yatube_api
 python manage.py migrate
-Создайте суперпользователя:
 
-bash
+5.**Создайте суперпользователя:**
+
+```bash
 python manage.py createsuperuser
-Запустите сервер:
 
-bash
+6.**Запустите сервер:**
+
+```bash
 python manage.py runserver
-📡 API Endpoints
+
+
+## 📡 API Endpoints
 🔐 Аутентификация
 POST /api/v1/jwt/create/ - Получение JWT токена
 
